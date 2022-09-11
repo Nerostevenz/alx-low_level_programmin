@@ -1,10 +1,8 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
  * main - main block
  * Description: Print alphabet in lower case
- * Return: 0 as SUCCESS
+ * Return: 0
  */
 int main(void)
 {
