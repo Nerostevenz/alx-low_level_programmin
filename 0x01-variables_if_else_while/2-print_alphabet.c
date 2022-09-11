@@ -4,16 +4,18 @@
 /**
  * main - main block
  * Description: Print alphabet in lower case
- * Return: 0
+ * Return: 0 as SUCCESS
  */
-void main(void)
+int main(void)
 {
-	int ch;
+	char c = "a";
 
-	for (char ch = "a"; ch <= "z"; ch++)
-		putchar(ch);
-		putchar ("\n");
-		getch();
+	while (c <= "z")
+	{
+		putchar(c);
+		c++;
+	}
+	putchar("\n");
 
 	return (0);
 }
