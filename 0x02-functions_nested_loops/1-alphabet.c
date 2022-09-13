@@ -4,11 +4,11 @@
  * Description: loweercase alphabets
  * Return: 0
  */
-int main(void)
+void print_alphabet(void)
 {
 	char c = 'a';
 
-	while (c <= z)
+	while (c <= 'z')
 	{
 		putchar(c);
 		c++;
