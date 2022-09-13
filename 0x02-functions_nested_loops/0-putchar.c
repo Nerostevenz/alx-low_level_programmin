@@ -1,4 +1,4 @@
-#include <putchar.h>
+#include "main.h"
 /**
  * main - main body
  * Description: prints putchar
