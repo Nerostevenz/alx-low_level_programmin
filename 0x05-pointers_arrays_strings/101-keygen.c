@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include "main.h"
 
 /**
@@ -9,18 +10,26 @@
 
 int main(void)
 {
-	int r = 0, c = 0;
-	time_t t;
+	int pass[100];
+	int b, sum, k;
 
-	srand((unsigned int) time(&t));
-	while ((c < 2772))
+	sum = 0;
+
+	srand(time(NULL));
+
+	for (b = 0; b < 100; b++)
 	{
-		r = rand() % 128;
-		if ((c + r) > 2772)
+		pass[b] = rand() % 78;
+		sum += (pass[b] + '0');
+		putchar(pass[b] + '0');
+
+		if ((2772 - sum) - '0' < 78)
+		{
+			k = 2772 - sum - '0';
+			sum += k;
+			putchar(k + '0');
 			break;
-		c = c + r;
-		printf("%c", r);
+		}
 	}
-	printf("%c\n", (2772 - c));
 	return (0);
 }
